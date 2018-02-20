@@ -1,6 +1,6 @@
-# PI Recorder Chop (working title) 
+# PI Recorder Shout (working title) 
 
-Intended to allow users to take audio recordings of an area of interest, without compromising privacy of the recordees or the fidelity of recordings.
+Intended to allow users to take audio field recordings of an area of interest.
 
-The application takes sound recordings, then reorders 'chunks' of samples into a random sequence so the nature of conversations are kept private, whilst keeping the high fidelity of recording.
+The application takes sound recordings when the sound levels go over an certain threshold. These are then created into separate audio files for the user to listen back to.
 
