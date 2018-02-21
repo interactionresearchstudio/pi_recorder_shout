@@ -47,11 +47,16 @@ void ofApp::setup(){
     soundThreshold = 0.2;
     holdTime = (sampleRate / bufferSize)*2.0;
     
-    
+    #ifdef PI_VERSION
+    soundstream.printDeviceList();
+    soundstream.setDeviceID(2);
+    soundstream.setup(this, 2, 1, sampleRate, bufferSize, 4);
+    #else
     soundstream.printDeviceList();
     soundstream.setDeviceID(4);
-    
     soundstream.setup(this, 2, 2, sampleRate, bufferSize, 4);
+    #endif
+    
     
 
 
